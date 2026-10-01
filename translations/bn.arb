@@ -14,6 +14,32 @@
       }
     }
   },
+  "@androidMixer": {
+    "description": "অ্যান্ড্রয়েডের নিজস্ব অডিও মিক্সার, যা সমস্ত অ্যাপের শব্দ মিশ্রিত করে এবং সিস্টেম ভলিউম ও ইফেক্ট প্রয়োগ করে"
+  },
+  "@bitPerfect": {
+    "description": "আউটপুট ডিভাইসে অডিও ঠিক সেভাবেই পৌঁছায় যেভাবে ফাইলে সংরক্ষিত আছে, কোনো প্রক্রিয়া ছাড়া"
+  },
+  "@bitPerfectActiveOn": {
+    "placeholders": {
+      "device": {
+        "type": "String"
+      },
+      "format": {
+        "type": "String"
+      }
+    }
+  },
+  "@bitPerfectSubtitle": {
+    "description": "বিট-পারফেক্ট অপশনের সাবটাইটেল"
+  },
+  "@bitPerfectUpTo": {
+    "placeholders": {
+      "format": {
+        "type": "String"
+      }
+    }
+  },
   "@clearTrackItemMultiple": {
     "placeholders": {
       "number": {
@@ -174,6 +200,9 @@
       }
     }
   },
+  "@crossfade": {
+    "description": "ট্র্যাকগুলোর মধ্যে ক্রসফেড ইফেক্টের সংক্ষিপ্ত নাম"
+  },
   "@crossfadeTriggerSeconds": {
     "placeholders": {
       "seconds": {
@@ -182,12 +211,18 @@
       }
     }
   },
+  "@curve": {
+    "description": "ইকুয়ালাইজারকে একটি ফ্রিকোয়েন্সি প্রতিক্রিয়া গ্রাফ হিসেবে দেখায়"
+  },
   "@dataIsProvidedByName": {
     "placeholders": {
       "name": {
         "type": "String"
       }
     }
+  },
+  "@decoder": {
+    "description": "যে উপাদানটি সংকুচিত অডিওকে (MP3, FLAC, ...) র' স্যাম্পলে রূপান্তর করে"
   },
   "@deleteFileCacheSubtitle": {
     "placeholders": {
@@ -215,6 +250,19 @@
       }
     }
   },
+  "@dither": {
+    "description": "বিকৃতি এড়াতে বিট ডেপথ কমানোর সময় সামান্য শব্দ (Noise) যোগ করা"
+  },
+  "@downmix": {
+    "description": "অডিও চ্যানেলগুলোকে কম সংখ্যায় রূপান্তর করা, যেমন ৫.১ কে স্টিরিওতে আনা"
+  },
+  "@embeddedLyricsArePrioritized": {
+    "placeholders": {
+      "setting": {
+        "type": "String"
+      }
+    }
+  },
   "@enableM3uSyncNote2": {
     "placeholders": {
       "playlistsBackupPath": {
@@ -222,9 +270,61 @@
       }
     }
   },
+  "@eqAllPass": {
+    "description": "ইকুয়ালাইজার ব্যান্ড যা শুধুমাত্র ফেজ পরিবর্তন করে, ভলিউম একই থাকে"
+  },
+  "@eqBandPass": {
+    "description": "ইকুয়ালাইজার ব্যান্ড যা একটি নির্দিষ্ট ফ্রিকোয়েন্সির সীমানা বজায় রাখে"
+  },
+  "@eqHighPass": {
+    "description": "ইকুয়ালাইজার ব্যান্ড যা নির্দিষ্ট ফ্রিকোয়েন্সির নিচের সবকিছু সরিয়ে দেয়"
+  },
+  "@eqHighShelf": {
+    "description": "ইকুয়ালাইজার ব্যান্ড যা নির্দিষ্ট ফ্রিকোয়েন্সির উপরের সবকিছু বাড়ায় বা কমায়"
+  },
+  "@eqLowPass": {
+    "description": "ইকুয়ালাইজার ব্যান্ড যা নির্দিষ্ট ফ্রিকোয়েন্সির উপরের সবকিছু সরিয়ে দেয়"
+  },
+  "@eqLowShelf": {
+    "description": "ইকুয়ালাইজার ব্যান্ড যা নির্দিষ্ট ফ্রিকোয়েন্সির নিচের সবকিছু বাড়ায় বা কমায়"
+  },
+  "@eqNotch": {
+    "description": "ইকুয়ালাইজার ব্যান্ড যা নির্দিষ্ট ফ্রিকোয়েন্সির সূক্ষ্ম অংশ সরিয়ে দেয়"
+  },
+  "@eqPeak": {
+    "description": "ইকুয়ালাইজার ব্যান্ড যা একটি নির্দিষ্ট ফ্রিকোয়েন্সিকে বাড়ায় বা কমায় (ঘণ্টা আকৃতি)"
+  },
+  "@exclusive": {
+    "description": "এক্সক্লুসিভ আউটপুট মোড, যেখানে শুধুমাত্র এই অ্যাপটি অডিও ডিভাইস ব্যবহার করতে পারে"
+  },
   "@extractAllColorPalettesSubtitle": {
     "placeholders": {
       "number": {
+        "format": "decimalPattern",
+        "type": "int"
+      }
+    }
+  },
+  "@fadeOnPlayPause": {
+    "description": "প্লে বা পজ করার সময় ভলিউম ফেড হওয়ার সংক্ষিপ্ত নাম"
+  },
+  "@forcedOffBy": {
+    "description": "কোন মোড দ্বারা অপশনটি বন্ধ করা হয়েছে তার শিরোনাম, {mode} হলো তার নাম যেমন বিট-পারফেক্ট বা ইউএসবি ডাইরেক্ট অ্যাক্সেস",
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      }
+    }
+  },
+  "@frequency": {
+    "description": "হার্টজ (Hz) এককে ইকুয়ালাইজার ব্যান্ডের কেন্দ্র ফ্রিকোয়েন্সি"
+  },
+  "@gain": {
+    "description": "ডেসিবলে (dB) ইকুয়ালাইজার ব্যান্ড কতটা বাড়ে বা কমে"
+  },
+  "@graphicEqualizerBands": {
+    "placeholders": {
+      "count": {
         "format": "decimalPattern",
         "type": "int"
       }
@@ -254,216 +354,6 @@
   "@importListenBrainzHistoryGuide": {
     "placeholders": {
       "link": {
-        "type": "String"
-      }
-    }
-  },
-  "@importSpotifyHistoryGuide": {
-    "placeholders": {
-      "link": {
-        "type": "String"
-      }
-    }
-  },
-  "@importYoutubeHistoryGuide": {
-    "placeholders": {
-      "takeoutLink": {
-        "type": "String"
-      }
-    }
-  },
-  "@importedNChannelsSuccessfully": {
-    "placeholders": {
-      "number": {
-        "format": "decimalPattern",
-        "type": "int"
-      }
-    }
-  },
-  "@importedNPlaylistsSuccessfully": {
-    "placeholders": {
-      "number": {
-        "type": "int"
-      },
-      "numberText": {
-        "type": "String"
-      }
-    }
-  },
-  "@lostMemoriesSubtitle": {
-    "placeholders": {
-      "number": {
-        "format": "decimalPattern",
-        "type": "int"
-      }
-    }
-  },
-  "@membershipYouNeedMembershipOfToAddMultipleAccounts": {
-    "placeholders": {
-      "name1": {
-        "type": "String"
-      },
-      "name2": {
-        "type": "String"
-      }
-    }
-  },
-  "@minimumOneItemSubtitle": {
-    "placeholders": {
-      "number": {
-        "format": "decimalPattern",
-        "type": "int"
-      }
-    }
-  },
-  "@newTracksRecommendedSubtitle": {
-    "placeholders": {
-      "currentTrack": {
-        "type": "String"
-      }
-    }
-  },
-  "@newTracksSimilarrReleaseDateSubtitle": {
-    "placeholders": {
-      "currentTrack": {
-        "type": "String"
-      }
-    }
-  },
-  "@operationRequiresAccount": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
-  "@operationRequiresMembership": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      },
-      "operation": {
-        "type": "String"
-      }
-    }
-  },
-  "@partyAddedBy": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
-  "@partyInviteTextListeningTo": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
-  "@partyMembershipRequired": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
-  "@partySavedToPlaylist": {
-    "placeholders": {
-      "count": {
-        "format": "decimalPattern",
-        "type": "int"
-      },
-      "name": {
-        "type": "String"
-      }
-    }
-  },
-  "@partyTransferHostConfirm": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
-  "@repeatForNTimes": {
-    "placeholders": {
-      "number": {
-        "type": "int"
-      }
-    }
-  },
-  "@resumeIfWasPausedForLessThanNMin": {
-    "placeholders": {
-      "number": {
-        "format": "decimalPattern",
-        "type": "int"
-      }
-    }
-  },
-  "@seeProjectCodeOnSite": {
-    "placeholders": {
-      "site": {
-        "type": "String"
-      }
-    }
-  },
-  "@signOutFromName": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
-  "@similarDiscoverDateSubtitle": {
-    "placeholders": {
-      "currentTrack": {
-        "type": "String"
-      }
-    }
-  },
-  "@similarTimeRangeSubtitle": {
-    "placeholders": {
-      "currentTrack": {
-        "type": "String"
-      }
-    }
-  },
-  "@suggestionSubtitle": {
-    "placeholders": {
-      "site": {
-        "type": "String"
-      }
-    }
-  },
-  "@trackPathOldNew": {
-    "placeholders": {
-      "newName": {
-        "type": "String"
-      },
-      "oldName": {
-        "type": "String"
-      }
-    }
-  },
-  "@yearInSongs": {
-    "placeholders": {
-      "count": {
-        "format": "decimalPattern",
-        "type": "int"
-      }
-    }
-  },
-  "@yourCurrentMembershipIs": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
-  "@yourYear": {
-    "placeholders": {
-      "year": {
         "type": "String"
       }
     }
@@ -1538,14 +1428,14 @@
   "used": "ব্যবহৃত",
   "value": "মান",
   "valueBetween50200": "মান অবশ্যই ৫০% থেকে ২০০% এর মধ্যে হতে হবে",
-  "versionMismatchMakeSureBothAppsAreOnTheSameVersion": "ভার্সন মিলছে না! নিশ্চিত করুন যে উভয় অ্যাপ একই ভার্সনের",
+  "versionMismatchMakeSureBothAppsAreOnTheSameVersion": "ভার্সন মিলছে না! নিশ্চিত করুন যে উভয় অ্যাপ একই ভার্সনের",
   "vibration": "কম্পন",
   "vibrationType": "কম্পনের ধরন",
   "video": "ভিডিও",
   "videoCache": "ভিডিও ক্যাশ",
   "videoCacheFile": "ক্যাশ করা ভিডিও ফাইল",
   "videoCacheFiles": "ক্যাশ করা ভিডিও ফাইল",
-  "videoOnly": "শুধুমাত্র ভিডিও",
+  "videoOnly": "শুধুমাত্র অডিও",
   "videoPlaybackSource": "ভিডিওর উৎস",
   "videoPlaybackSourceAutoSubtitle": "এটি স্থানীয় ভিডিওকে অগ্রাধিকার দেবে, না পাওয়া গেলে ইউটিউব থেকে আনা হবে",
   "videoPlaybackSourceLocal": "স্থানীয় ভিডিও",
